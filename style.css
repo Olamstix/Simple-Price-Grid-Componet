@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #E6E6E6;
+    font-family: sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.top-container {
+    max-width: 700px;
+    margin: 0 auto;
+    border: none;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 20px;
+    width: 50%;
+    height: 200px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+.top-container h1{
+    color: hsl(179, 62%, 43%);
+}
+.top-container h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+.top-container h3, .p-1 {
+    margin-top: 8px;
+}
+.top-container .p-1, .p-2 {
+    color: hsl(219, 15%, 18%);
+}
+
+
+.row {
+    margin-top: 76px;
+    border: none;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: -webkit-flex;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 220px;
+    transform: translate(-50%, -50%);
+    background: hsl(179, 62%, 43%);
+}
+
+.column-1, .column-2 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    padding: 20px;
+}
+.column-2{
+    background: hsl(179, 73%, 44%);
+    border-bottom-right-radius: 7px;
+    }
+
+.ms, .wu{
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+}
+.price  {
+    color: white;
+    font-size: 30px;
+    padding: 6px;
+}
+.price span, .fa {
+    font-size: 13px;
+    color: hsl(204, 43%, 93%);
+}
+.fa{
+    padding-left: 8px;
+}
+.button{
+    padding: 10px 70px 10px 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    background: hsl(71, 73%, 54%);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.button:hover{
+    background: white;
+    color: hsl(71, 81%, 56%);
+    
+}
+
+.tutorial {
+    padding: 8px;
+    color: hsl(204, 43%, 93%);
+    font-size: 13px;
+    
+}
+
+@media(max-width: 500px) {
+    .top-container, .row  {
+        flex-direction: column;
+       padding-top: 10px;
+        font-size: 13px;
+
+    }
+    .top-container h1 {
+        font-size: 18px;
+    }
+
+    .top-container h3 {
+        font-size: 13;
+    }
+
+    .top-container .p-1, .p-2{
+        font-size: 11px;
+    }
+
+    .row{
+        margin-bottom: 10px;
+    }
+
+    .column-2 p{
+        font-size: 11px;
+    }
+    .column-2 .wu{
+        font-size: 12px;
+    }
+}
+
